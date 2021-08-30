@@ -15,6 +15,9 @@
         var content = response.wind.speed;
         $("#windSpeed").append(content);
         console.log("wind speed: " + response.wind.speed);
+
+        var currentWeather = response.weather[0].main;
+        $("#currentWeather").append(currentWeather);
       });
     </script>
   </head>
